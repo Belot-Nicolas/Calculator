@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+.calculator {
+  width: 92vw;
+  margin: 2vw;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #adadad6b 0%, #0008ff2e 100%);
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 14px 0px #000000;
+}
+
+.screen {
+  height: 33vh;
+  width: 76vw;
+  background-color: white;
+  margin: 5vw;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 30px;
+}
+
+.touchesCalculator {
+  display: grid;
+  grid-template-columns: repeat(4, 16vw);
+  grid-template-rows: repeat(5, 10vh);
+  grid-gap: 7px;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0 3px #a8a8a8;
+  font-size: 18px;
+}
+
+button:active {
+  box-shadow: 0 1px #a8a8a8;
+  transform: translateY(2px);
+}
+
+.buttonOperator {
+  color: white;
+  background-color: #2567fb;
+}
+
+button[data-key="8"] {
+  background-color: red;
+  font-weight: bold;
+  color: white;
+}
+
+button[data-key="13"] {
+  grid-column: span 2;
+  background-color: #36e700;
+  font-weight: bold;
+  color: white;
+  font-size: 35px;
+}
