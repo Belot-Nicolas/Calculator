@@ -34,6 +34,11 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 14p
   font-size: 30px;
 }
 
+.screen:hover{
+  transform: rotate(0.5turn);
+  transition: 1s;
+}
+
 .touchesCalculator {
   display: grid;
   grid-template-columns: repeat(4, 16vw);
