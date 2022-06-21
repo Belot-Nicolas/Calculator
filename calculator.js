@@ -4,17 +4,17 @@ const screen = document.querySelector('.screen');
 
 document.addEventListener('keydown', (e) => {
     const value = e.keyCode.toString();
-    calculer(value)
+    calculate(value)
 
 })
 
 document.addEventListener('click', (e) => {
     const value = e.target.dataset.key;
-    calculer(value)
+    calculate(value)
 
 })
 
-const calculer = (value) => {
+const calculate = (value) => {
     if (listeKeycode.includes(value)) {
         switch (value) {
             case '8':
